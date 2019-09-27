@@ -19,6 +19,7 @@ extension Array where Element: Comparable{
         self.sort()
         let startVal = self[0] as! Int
         var tuple = (startVal, 1)
+        print(tuple)
         for x in self{
             if (tuple.0 != x as! Int){
                 tuple.1 += 1
